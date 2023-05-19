@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/photo.webp" alt="">
+            </div>
+            <h1>Jacobo Zabala</h1>
+            <h2>Systems Engineer - Front-end Developer</h2>
+            <br>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola,</span> mi nombre es <span>Jacobo Zabala.</span> soy ingeniero de sistemas, y programador junior front-end 
+            con un enfoque en crear experiencias web atractivas y funcionales. Me encanta el mundo del desarrollo web y disfruto 
+            de la combinación de diseño y código para crear productos de alta calidad.
+            
+            He adquirido experiencia en lenguajes de programación como HTML, CSS y JavaScript, y estoy familiarizado con frameworks como Angular,
+            Me emociona la posibilidad de seguir aprendiendo y mantenerme actualizado con las últimas tendencias y tecnologías en el campo del front-end.</p><br><br>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Celular</strong>
+                            +57 3154624326
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jujazabala@gmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            github.com/JacoboZabala
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Pasto, Colombia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button>
+                <a href="https://drive.google.com/uc?id=17Qz6fMQ-5uF4l8Dpq9NDlPcWuLoy6kPn&export=download" download="Doc">Descargar CV </a> <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+
+                
+                <!-- Skills -->
+                <div class="col">
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="material-icons">html</i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="interes">
+                            <i class="material-icons">css</i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="material-icons">javascript</i>
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="interes">
+                            <i class="material-icons">php</i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/angular.webp" alt="">
+                            <span>ANGULAR</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/nodejs.webp" alt="">
+                            <span>NODE JS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="material-icons" style="margin-bottom: 10px;">wordpress</i>
+                            <span>WORDPRESS</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/github.webp" alt="">
+                            <span>GITHUB</span>
+                        </div>
+                        <div class="interes">
+                            <img src="img/azure.webp" alt="">
+                            <span>AZURE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="casa">Universidad Cesmag</span>
+                        <span class="fecha">2017 - presente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Gestión de Proyectos</h4>
+                        <span class="casa">Universidad Cesmag</span>
+                        <span class="fecha">2022 - presente</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Cursos</h3>
+                    <div class="item izq">
+                        <h4>Contenidos Digitales con wordpress</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2023</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web con PHP</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Lilisoft</span>
+                        <span class="fecha">2023 - presente</span>
+                        <p>Sistema de información ERP (Enterprise Resouce Planning) denominado Lilisoft, el cual consiste de optimizar los procesos de forma unificada con el fin de prestar un servicio de calidad en todas sus especialidades.</p>
+                        <br>
+                        <p>Colaborador con el desarrollo del módulo de inventarios que contempla un sistema para la gestión de inventario de equipos biomedicos, inventario de sistemas de informacion, inventario de ropa hospitalaria e inventario de muebles y enseres.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Clinicardiopabon</span>
+                        <span class="fecha">2023 - presente</span>
+                        <p>Como colaborador, tuve la oportunidad de contribuir al desarrollo y mantenimiento de la página web de la Clínica Pabón utilizando WordPress. 
+                            Trabajé en estrecha colaboración con el equipo para implementar nuevas funcionalidades, optimizar el diseño y asegurar una experiencia de usuario intuitiva. 
+                            Fue una experiencia enriquecedora que me permitió aplicar mis habilidades de desarrollo web y contribuir al éxito de la Clínica Pabón en línea.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Mobile Developer</h4>
+                        <span class="casa">EasyAmbulance</span>
+                        <span class="fecha">2017 - 2022</span>
+                        <p>Colaborador en el desarrollo de un sistema de gestión de georreferenciado aplicado al servicio de emergencias de ambulancias cuyo propósito es brindar al usuario la facilidad de solicitar dicho servicio, sin necesidad de esperar largos periodos de tiempo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                        <button><a href="Tasas-de-interes/index.html">Nominal a nominal</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                        <button><a href="Tasas-de-interes/index.html">Nominal a nominal</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                        <button><a href="Tasas-de-interes/index.html">Nominal a nominal</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
